@@ -4,11 +4,11 @@
 }
 
 body {
-  margin: 0px;
+  margin: 0;
   padding: 0;
 }
 
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   color: black;
@@ -16,6 +16,8 @@ body {
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
+  height: 150px;
+  border-bottom: 10px linear-gradie;
 }
 
 .logo {
@@ -27,10 +29,12 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 50px;
 }
 
 #navbar-links  li{
   list-style: none;
+  border-bottom: white solid 15px;
 }
 
 #navbar-links li a {
@@ -43,7 +47,16 @@ body {
 
 #navbar-links li:hover {
   cursor: pointer;
-  background-color: rgb(238, 238, 241);
+  border-bottom: black solid 15px;
+  border-radius: 0 0 15px 15px;
+}
+
+.donate-button {
+  background-color: rgb(131, 131, 242);
+}
+
+.donate-button:hover {
+  background-color: white;
 }
 
 #hamburger-button {
@@ -92,55 +105,69 @@ body {
   #navbar-links.active {
     display: flex;
   }
-}
+} */
 
 /* Hero Section */
 .hero-container {
-  height: 50vw;
-  background-image: url(/Users/brentsharpe/repos/Syracuse-Children-s-Zone/images/heroimage2.jpg);
-  background-size: cover;
-  background-position: relative;
-  position: relative;
-  background-repeat: no-repeat;
-  border: 5px solid;
-  border-image:   linear-gradient(to right, orange 25%, teal 25%, teal 50%,red 50%, red 75%, yellow 75%) 5;
+  width: 100%;
+  height: 55vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  /* background-image: url('/Users/brentsharpe/repos/Syracuse-Children-s-Zone/images/heroimg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;*/
 }
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  width: 300px;
+}
+
+.hero-top-container {
+  display: flex;
+  gap: 100px;
+}
+
+.puzzle-img {
+  width: 40vw;
+}
+
+.blue {
+  color: #0366B9;
+}
+
+.red {
+  color: #F50B14;
+}
+
+/* .hero-left {
+  width: 800px;
+  height: 600px;
+  background-color: rgb(72, 242, 143);
+  position: relative;
+  border-bottom: black solid 15px;
+  border-radius: 0 0 15px 15px;
+}
+
+.hero-right {
+  width: 500px;
+  height: 350px;
+  background-color: rgb(236, 109, 109);
+  position: absolute;
+  left: 800px;
+  top: 300px;
+  border-bottom: black solid 15px;
+  border-radius: 0 0 15px 15px;
+} */
 
 .hero-container h2 {
   color: black;
-  position: absolute;
-  font-size: 4.5vw;
+  font-size: 2.5vw;
   padding: 25px;
-}
-
-/* .hero-container:before, .hero-container:after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  height: 8px;
-  background-image: -webkit-linear-gradient(35deg, lightblue 20%, yellow, orange, red, green);
-  background-size: 80px;
-}
-
-.hero-container:before {
-  top: 0px;
-}
-.hero-container:after {
-  bottom: 0px;
-} */
-
-/* About Section */
-.about {
-  padding: 50px;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 4.5vw;
-}
-
-.about p{
-  font-weight: 300;
-  font-size: 3.5vw;
 }
