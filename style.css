@@ -6,38 +6,37 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: url('/Users/brentsharpe/repos/Syracuse-Children-s-Zone/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   color: black;
-  background-color: white;
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
   height: 150px;
-  border-bottom: 10px linear-gradie;
-} */
+} 
 
 .logo {
-  width: 80px;
-  height: 90px;
-  float: right;
-  margin-right: 50px;
+  width: 200px;
+  height: auto;
+  /* height: 140px; */
 }
 
-/*
 #navbar-links ul {
   margin: 0;
   padding: 0;
   display: flex;
   gap: 50px;
 }
-
 #navbar-links  li{
   list-style: none;
-  border-bottom: white solid 15px;
+  border-bottom: white solid 5px;
 }
 
 #navbar-links li a {
@@ -45,21 +44,13 @@ body {
   color: black;
   padding: 1rem;
   display: block;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
 }
 
 #navbar-links li:hover {
   cursor: pointer;
-  border-bottom: black solid 15px;
-  border-radius: 0 0 15px 15px;
-}
-
-.donate-button {
-  background-color: rgb(131, 131, 242);
-}
-
-.donate-button:hover {
-  background-color: white;
+  border-bottom: #CCF381 solid 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 #hamburger-button {
@@ -80,7 +71,7 @@ body {
   border-radius: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   #hamburger-button {
     display: flex;
     margin: auto;
@@ -108,10 +99,14 @@ body {
   #navbar-links.active {
     display: flex;
   }
-} */
 
-/* Hero Section */
-.hero-container {
+  .logo {
+    margin-top: 15px;
+  }
+} 
+
+/* >>>>>>>>>>>>     Landing Page     <<<<<<<<<<<<<<<<< */
+.landing-container {
   width: 100%;
   height: 57vw;
   display: flex;
@@ -123,27 +118,49 @@ body {
 }
 
 .buttons-container {
-  display: grid;
-  grid-row: 2 / 1;
-  margin-top: 25px;
+  margin-top: 225px;
   gap: 1vw;
   justify-content: space-around;
-}
-button {
-  border-radius: 30px;
-  width: auto;
-  font-size: 2vw;
-  padding: 10px;
-  background-color: #0366B9;
-  color: white;
+  object-fit: contain;
 }
 
-.hero-top-container {
+.learn-more-button {
+  animation-duration: 10s;
+}
+
+.donate-button {
+  animation-duration: 12s;
+}
+
+.volunteer-button {
+  animation-duration: 14s;
+}
+
+.button {
+  width: 200px;
+  height: auto;
+  animation-iteration-count: infinite;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}
+
+
+.landing-top-container {
   display: flex;
-}
-
-.puzzle-img {
-  width: 35vw;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .blue {
@@ -154,28 +171,190 @@ button {
   color: #DD4A42;
 }
 
-/* .hero-left {
-  width: 800px;
-  height: 600px;
-  background-color: rgb(72, 242, 143);
-  position: relative;
-  border-bottom: black solid 15px;
-  border-radius: 0 0 15px 15px;
-}
-
-.hero-right {
-  width: 500px;
-  height: 350px;
-  background-color: rgb(236, 109, 109);
-  position: absolute;
-  left: 800px;
-  top: 300px;
-  border-bottom: black solid 15px;
-  border-radius: 0 0 15px 15px;
-} */
-
-.hero-container h2 {
+.title {
   color: black;
   font-size: 2.5vw;
-  padding: 25px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.motto {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5vw;
+}
+
+/*  >>>>>>>>>>>>>>>   Home Hero Section   <<<<<<<<<<<<<<< */
+.hero-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  /* margin-top: 50px; */
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: #4831D4;
+  clip-path: polygon(0% 10%, 100% -2%, 100% 100%, 0 90%);
+}
+
+.hero-left {
+  width: 40%;
+}
+
+.hero-left h1 {
+  font-size: 3.5vw;
+}
+
+p {
+  font-size: 1.5vw;
+  line-height: 1.5;
+}
+
+button {
+  background-color: #CCF381;
+  padding: 15px;
+  font-size: 2rem;
+  color: #4831D4;
+  border-radius: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hero-image-grid {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  column-gap: 15px;
+  row-gap: 15px;
+  /* border: 5px black solid; */
+}
+
+.hero-image-grid img {
+  width: 100%;
+  height: 100%;
+  border: 5px solid black;
+  /* object-fit: cover; */
+}
+
+.image-grid-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.image-grid-2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.image-grid-3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+
+.image-grid-4 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.image-grid-5 {
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.image-grid-6 {
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+
+/* >>>>>>>>>>>>>>       Programs Section    <<<<<<<<<<<<<<< */
+
+
+.programs-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: polygon(0% 10%, 100% -2%, 100% 100%, 0 90%);
+
+}
+
+.program {
+  text-align: center;
+  width: 300px;
+}
+
+.program h3 {
+  font-size: 2rem;
+}
+.icon {
+  width: 100px;
+  height: auto;
+}
+
+.green {
+  color: #CCF381;
+}
+
+.blue {
+  color: #4831D4;
+}
+
+.programs-title {
+  text-align: center;
+}
+
+/* >>>>>>>>>>>>>>>>> Mission and Values Section <<<<<<<<<<<<<<<<<< */
+.mission-values-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.mission-values-introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  text-align: center;
+}
+
+.mission-values-divider-image {
+  width: 100%;
+  height: 600px;
+  background-image: url("/Users/brentsharpe/repos/Syracuse-Children-s-Zone/images/divider.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0 100%);
+}
+
+.our-mission-section,
+.our-values-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-title,
+.values-title {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
 }
