@@ -28,6 +28,12 @@ body {
   /* height: 140px; */
 }
 
+.donate-button {
+  background-color: rgb(244, 128, 128);
+  color: white;
+  clip-path: polygon(0% -9%, 100% 20%, 100% 100%, 0% 100%);
+}
+
 #navbar-links ul {
   margin: 0;
   padding: 0;
@@ -199,6 +205,7 @@ body {
 
 .hero-left {
   width: 40%;
+  color: white;
 }
 
 .hero-left h1 {
@@ -344,17 +351,75 @@ button:hover {
   clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0 100%);
 }
 
-.our-mission-section,
-.our-values-section {
+.our-mission-section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.mission-info {
+  width: 50%;
+}
+
+.mission-icon {
+  width: 200px;
+  height: auto;
+}
+
+.our-values-section {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.values-info {
+  width: 50%;
+}
+
+.values-icon {
+  width: 200px;
+  height: auto;
+}
+
+/* >>>>>>>>>>>> Contact Form <<<<<<<<<<<<<<<<< */
+.contact-form-container {
+  background-color: #CCF381;
+  width: 800px;
+  height: 600px;
+  clip-path: polygon(0% -9%, 100% 10%, 100% 100%, 0% 100%);
+  padding: 50px;
+  margin-top: 100px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mission-title,
-.values-title {
+form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+}
+
+input {
   width: 500px;
+  height: 50px;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+textarea {
+  width: 500px;
+  height: 250px;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.submit-btn {
+  clip-path: polygon(0% -9%, 100% 20%, 100% 100%, 0% 100%);
+  background-color: #4831D4;
+  color: white;
+  width: 100px;
 }
