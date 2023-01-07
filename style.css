@@ -50,7 +50,7 @@ body {
   color: black;
   padding: 1rem;
   display: block;
-  font-size: 1.5vw;
+  font-size: 1rem;
 }
 
 #navbar-links li:hover {
@@ -77,7 +77,7 @@ body {
   border-radius: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   #hamburger-button {
     display: flex;
     margin: auto;
@@ -96,10 +96,13 @@ body {
   #navbar-links ul {
     flex-direction: column;
     width: 100%;
+    background-color: white;
+    z-index: 1;
   }
 
   #navbar-links li {
     text-align: center;
+    font-size: 5rem;
   }
 
   #navbar-links.active {
@@ -113,22 +116,32 @@ body {
 
 /* >>>>>>>>>>>>     Landing Page     <<<<<<<<<<<<<<<<< */
 .landing-container {
-  width: 100%;
-  height: 57vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('/Users/brentsharpe/repos/Syracuse-Children-s-Zone/images/syrSkyline.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-image: url('/Users/brentsharpe/repos/Syracuse-Children-s-Zone/images/landingBackground.png') no-repeat center center fixed;
+  /* background-attachment: fixed; */
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.logo-landing {
+  width: 300px;
+  height: auto;
+  float: right;
 }
 
 .buttons-container {
-  margin-top: 225px;
-  gap: 1vw;
+  margin-top: 125px;
+  display: flex;
   justify-content: space-around;
   object-fit: contain;
+  gap: 50px;
+  width: 800px;
 }
+
 
 .learn-more-button {
   animation-duration: 10s;
@@ -194,9 +207,9 @@ body {
 /*  >>>>>>>>>>>>>>>   Home Hero Section   <<<<<<<<<<<<<<< */
 .hero-section {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-  /* margin-top: 50px; */
   padding-bottom: 100px;
   padding-top: 100px;
   background-color: #4831D4;
@@ -204,16 +217,16 @@ body {
 }
 
 .hero-left {
-  width: 40%;
+  width: 40em;
   color: white;
 }
 
 .hero-left h1 {
-  font-size: 3.5vw;
+  font-size: 4rem;
 }
 
 p {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -235,7 +248,6 @@ button:hover {
   grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
   column-gap: 15px;
   row-gap: 15px;
-  /* border: 5px black solid; */
 }
 
 .hero-image-grid img {
@@ -294,13 +306,14 @@ button:hover {
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   border-bottom: polygon(0% 10%, 100% -2%, 100% 100%, 0 90%);
 
 }
 
 .program {
   text-align: center;
-  width: 300px;
+  width: 400px;
 }
 
 .program h3 {
@@ -338,8 +351,14 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 40em;
   text-align: center;
+}
+
+@media(max-width: 700px) {
+  .mission-values-introduction {
+    width: 30em;
+  }
 }
 
 .mission-values-divider-image {
@@ -355,44 +374,46 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 100px;
 }
 
 .mission-info {
-  width: 50%;
+  width: 500px;
 }
 
 .mission-icon {
-  width: 200px;
-  height: auto;
+  width: 300px;
+  height: 300px;
 }
 
 .our-values-section {
   margin-top: 50px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: space-around;
 }
 
 .values-info {
-  width: 50%;
+  width: 500px;
 }
 
 .values-icon {
-  width: 200px;
-  height: auto;
+  width: 300px;
+  height: 300px;
 }
 
 /* >>>>>>>>>>>> Contact Form <<<<<<<<<<<<<<<<< */
+
 .contact-form-container {
   background-color: #CCF381;
-  width: 800px;
-  height: 600px;
+  width: 100%;
+  /* height: 600px; */
   clip-path: polygon(0% -9%, 100% 10%, 100% 100%, 0% 100%);
   padding: 50px;
   margin-top: 100px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
 }
 
 form {
@@ -405,13 +426,13 @@ form {
 }
 
 input {
-  width: 500px;
+  width: 400px;
   height: 50px;
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
 }
 textarea {
-  width: 500px;
+  width: 400px;
   height: 250px;
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
@@ -422,4 +443,19 @@ textarea {
   background-color: #4831D4;
   color: white;
   width: 100px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.contact-info h4 {
+  font-size: 1.5rem;
+}
+
+.contact-icons {
+  width: 50px;
+  height: auto;
 }

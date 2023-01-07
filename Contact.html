@@ -1,13 +1,49 @@
-<form>
-     
-    <input type="text" class="name" placeholder="Your name">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
 
-    <input type="text" class="name" placeholder="Your phone number">
+    <nav class="navbar">
+        <div class="nav-logo">
+          <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        </div>
+        <a href="#" id="hamburger-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div id="navbar-links">
+          <ul>
+            <li><a href="/Users/brentsharpe/repos/Syracuse-Children-s-Zone/pages/OurPurpose.html">Our Mission</a></li>
+            <li><a href="/Users/brentsharpe/repos/Syracuse-Children-s-Zone/pages/Programs.html">Programs</a></li>  
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a class="donate-button" href="/Users/brentsharpe/repos/Syracuse-Children-s-Zone/pages/Donate.html">Donate</a></li>
+          </ul>
+        </div>
+    </nav>
 
-    <input type="text" class="name" placeholder="Your email">
 
-    <textarea type="text" class="name" placeholder="Your message"></textarea>
 
-    <input type="submit" class="submit-btn">
-
-</form>
+    <div class="contact-form-container">
+        <form>
+          <input type="text" class="name" placeholder="Your name">
+          <input type="text" class="name" placeholder="Your email">
+          <textarea type="text" class="name" placeholder="Your message"></textarea>
+          <input type="submit" class="submit-btn">
+        </form>
+        <div class="contact-info">
+          <h1 class="contact-us-header"><span class="blue">CONTACT </span> US</h1>
+          <h4>Do you want to know more? <img src="images/learning.png" class="contact-icons"></h4>
+          <h4><img src="images/family.png" class="contact-icons"> Do you know a child or parent that could benefit from SCZ?</h4>
+          <h4>D0 you want to get involved? <img src="images/help.png" class="contact-icons"></h4>
+        </div>
+      </div>
+</body>
+</html>
