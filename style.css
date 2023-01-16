@@ -288,7 +288,7 @@ button:hover {
 .mission-values-divider-image {
   width: 100%;
   height: 600px;
-  background-image: url("/Users/brentsharpe/repos/Syracuse-Children-s-Zone/images/divider.jpg");
+  background-image: url("images/divider.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0 100%);
