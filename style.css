@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('/Users/brentsharpe/repos/Syracuse-Children-s-Zone/images/background.png');
+  /* background-image: url('/Users/brentsharpe/repos/Syracuse-Children-s-Zone/images/background.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,7 +24,7 @@ body {
 
 
 .logo {
-  width: 200px;
+  width: 300px;
   height: auto;
   /* height: 140px; */
 }
