@@ -95,8 +95,10 @@ body {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: 100%;
+    height: 100%;
     padding: 0;
+    z-index: 999;
   }
 
   #navbar-links ul {
