@@ -12,6 +12,14 @@ body {
   background-attachment: fixed;
 }
 
+h1 {
+  padding: 5px;
+}
+
+p {
+  padding: 5px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,7 +28,37 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   height: 150px;
+  /* margin-bottom: 30px; */
+  background-image: linear-gradient(90deg,
+     #0c54ef,
+     #0c54ef 10%,
+     #24a718 10%,
+     #24a718 20%,
+     #851073 20%,
+     #851073 30%,
+     #0c54ef 30%,
+     #0c54ef 40%,
+     #f0de1a 40%,
+     #f0de1a 50%,
+     #24a718 50%,
+     #24a718 60%,
+     #7b75ee 60%,
+     #7b75ee 70%,
+     #0c54ef 70%,
+     #0c54ef 80%,
+     #24a718 80%,
+     #24a718 90%,
+     #c0de46 90%
+  );
+  background-size: 100% 10px;
+  background-position: bottom;
+  background-repeat: no-repeat;
 } 
+
+.navbar:last-child {
+  background: none;
+  margin-bottom: 0;
+}
 
 
 .logo {
@@ -119,6 +157,9 @@ body {
 
   .logo {
     margin-top: 15px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: auto;
   }
 } 
 
@@ -131,7 +172,14 @@ body {
   padding-bottom: 100px;
   padding-top: 100px;
   background-color: #4831D4;
-  clip-path: polygon(0% 10%, 100% -2%, 100% 100%, 0 90%);
+  /* clip-path: polygon(0% 4%, 100% -1%, 100% 100%, 0 98%); */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 98%);
+}
+
+@media(max-width: 500px) {
+  .hero-section {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 98%);
+  }
 }
 
 .hero-left {
@@ -221,6 +269,18 @@ button:hover {
   grid-row-end: 10;
 }
 
+@media(max-width:500px) {
+  .hero-image-grid {
+    display: grid;
+    padding-top: 75px;
+    padding-bottom: 35px;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+}
+
 /* >>>>>>>>>>>>>>       Programs Section    <<<<<<<<<<<<<<< */
 
 
@@ -265,7 +325,6 @@ button:hover {
 
 /* >>>>>>>>>>>>>>>>> Mission and Values Section <<<<<<<<<<<<<<<<<< */
 #mission-values-section {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -284,7 +343,11 @@ button:hover {
 
 @media(max-width: 700px) {
   .mission-values-introduction {
-    width: 30em;
+    width: 400px;
+  }
+
+  .mission-values-paragraph {
+    width: 400px;
   }
 }
 
@@ -418,7 +481,13 @@ textarea {
   align-items: center;
   padding-bottom: 50px;
   padding-top: 50px;
-  clip-path: polygon(0% -20%, 100% 20%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% -5%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+@media(max-width:500px) {
+  .footer-section {
+    clip-path: polygon(0% -5%, 100% 5%, 100% 100%, 0% 100%);
+  }
 }
 
 .footer-section h4 {
@@ -497,7 +566,9 @@ path {
   justify-content: center;
   padding-left: 25px;
   padding-right: 25px;
+  width: 100%;
 }
+
 
 .programs-header-nav a {
   text-decoration: none;
